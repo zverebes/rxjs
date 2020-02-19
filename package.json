@@ -1,17 +1,20 @@
 {
-  "name": "rxjs",
+  "name": "rxjs_sample",
   "version": "1.0.0",
   "description": "",
   "main": "app.ts",
   "scripts": {
     "build": "tsc",
-    "start": "node --inspect=5858 -r ts-node/register -r ./src/app.ts",
+    "start": "node -r ts-node/register ./src/app.ts",
     "start:watch": "nodemon --watch src --ext ts --exec ts-node --delay 3 ./src/app.ts"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "rxjs": "^6.5.4"
+  },
   "devDependencies": {
+    "@types/node": "^13.7.2",
     "@typescript-eslint/eslint-plugin": "^1.13.0",
     "@typescript-eslint/parser": "^2.19.2",
     "eslint": "^6.8.0",
